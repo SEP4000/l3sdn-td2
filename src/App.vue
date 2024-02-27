@@ -1,21 +1,19 @@
 <script>
-import HelloWorld from './components/Home.vue'
+import { RouterView } from 'vue-router';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RouterView
   }
 }
 </script>
 
 <template>
   <div id="app">
-  <HelloWorld/>
-  <router-view></router-view>
+    <RouterView/>
   </div>
 </template>
 
 <style scoped>
-
 </style>
