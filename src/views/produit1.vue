@@ -14,7 +14,7 @@
             <td>{{ produit.nom }}</td>
             <td>{{ produit.prix }}</td>
             <td>{{ produit.description }}</td>
-            <td><router-link :to="'/produit1_1/' + produit.nom">Voir le produit</router-link></td>
+            <td><router-link :to="'/produit/' + produit.nom">Voir le produit</router-link></td>
           </tr>
         </tbody>
       </table>
