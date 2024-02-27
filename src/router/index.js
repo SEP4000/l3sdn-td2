@@ -5,21 +5,19 @@ import Produit1 from '../views/produit1.vue';
 import Produit2 from '../views/produit2.vue';
 import Produit3 from '../views/produit3.vue';
 import Produit4 from '../views/produit4.vue';
-import Home from '../components/Home.vue';
-
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/home',
+      path: '/',
       name: 'home',
       component: HomeView
     },
     {
       path: '/about',
-      name: 'Home1',
-      component: Home
+      name: 'about',
+      component: AboutView
     },
     {
       path: '/produit1',
