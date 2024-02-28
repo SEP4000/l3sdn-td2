@@ -19,23 +19,37 @@ const l = [
 </script>
 
 <template>
-    <table>
+    <table class="product-table">
         <thead>
             <tr>
                 <th>Nom du Produit</th>
                 <th>Prix</th>
                 <th>Description</th>
-                <th>Voir</th>
             </tr>
-            <tbody>
-                <tr v-for="produit in l">
-                    <td>{{produit.nom}}</td>
-                    <td>{{produit.prix}}</td>
-                    <td>{{produit.description}}</td>
-                </tr>
-            </tbody>
         </thead>
+        <tbody>
+            <tr v-for="produit in l" :key="produit.nom">
+                <td>{{ produit.nom }}</td>
+                <td>{{ produit.prix }}€</td>
+                <td>{{ produit.description }}</td>
+            </tr>
+        </tbody>
     </table>
 </template>
 
+<style scoped>
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+.product-table tr, .product-table td, .product-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.product-table td:first-child {
+    font-weight: bold;
+}
+</style>
