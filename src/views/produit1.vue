@@ -25,6 +25,7 @@ const l = [
                 <th>Nom du Produit</th>
                 <th>Prix</th>
                 <th>Description</th>
+                <th>Voir le produit</th>
             </tr>
         </thead>
         <tbody>
@@ -32,6 +33,7 @@ const l = [
                 <td>{{ produit.nom }}</td>
                 <td>{{ produit.prix }}€</td>
                 <td>{{ produit.description }}</td>
+                <td><router-link :to="`/produit/${produit.nom}`">Voir le produit</router-link></td>
             </tr>
         </tbody>
     </table>

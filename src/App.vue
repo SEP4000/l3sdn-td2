@@ -16,4 +16,5 @@ export default {
 </template>
 
 <style scoped>
+/* Vous pouvez ajouter des styles ici si nécessaire */
 </style>
