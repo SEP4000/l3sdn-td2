@@ -5,7 +5,8 @@
         <p><strong>Nom du produit:</strong> {{ produit.nom }}</p>
         <p><strong>Prix:</strong> {{ produit.prix }}€</p>
         <p><strong>Description:</strong> {{ produit.description }}</p>
-        <router-link :to="`/panier`"><button @click="ajouterAuPanier">Mettre dans le panier</button></router-link>
+        <button @click="ajouterAuPanier">Mettre dans le panier</button>
+        <router-link :to="`/panier`">Voir le panier</router-link>
       </div>
     </div>
   </template>
