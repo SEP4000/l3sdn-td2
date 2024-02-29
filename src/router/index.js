@@ -6,6 +6,7 @@ import Produit2 from '../views/produit2.vue';
 import Produit3 from '../views/produit3.vue';
 import Produit4 from '../views/produit4.vue';
 import ProductDetailView from '../views/ProductDetailView.vue';
+import '../components/Route.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: AboutView
+    },
+    {
+      path: '/route',
+      name: 'route',
+      component: () => import('../components/Route.vue')
     },
     {
       path: '/produit1',
